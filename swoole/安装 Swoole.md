@@ -19,7 +19,7 @@ PHP_FPM_INSTALL_SWOOLE=true
 $ docker-compose build php-fpm workspace
 ```
 
-重新构建 Docker 容器，构建完成后重启这两个容器，进入 `workspace` 容器，运行 `php -m`  查看 Swoole 是否安装成功，如果扩展列表包含 `swoole` 则表示安装成功。
+重新构建 Docker 容器，构建完成后重启这两个容器，进入 `workspace` 容器，运行 `php -m`  查看 `swoole` 是否安装成功，如果扩展列表包含 `swoole` 则表示安装成功。
 
 
 
