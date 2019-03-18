@@ -18,4 +18,24 @@
    $ gh-pages -d _book
    ```
 
-   
+
+##### 附加：如果安装速度**太慢**，建议使用淘宝 `npm` 镜像：
+
+- 临时使用：
+
+```shell
+$ npm --registry https://registry.npm.taobao.org install express
+```
+
+- 持久使用：
+
+```shell
+$ npm config set registry https://registry.npm.taobao.org
+```
+
+配置后可通过下面方式来验证是否成功
+
+```shell
+$ npm config get registry
+```
+
