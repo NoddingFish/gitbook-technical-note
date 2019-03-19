@@ -1,0 +1,436 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Beego 安装和 Bee 工具的使用 · 技术笔记 · Gitbook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="打盹的鱼">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="安装 Go.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.whxuran.cn" target="_blank" class="custom-link">个人网站</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../gitbook/">
+            
+                <a href="../gitbook/">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../gitbook/Gitbook 一键部署至 GitHub Pages.html">
+            
+                <a href="../gitbook/Gitbook 一键部署至 GitHub Pages.html">
+            
+                    
+                    Gitbook 一键部署至 GitHub Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../gitbook/plugins.html">
+            
+                <a href="../gitbook/plugins.html">
+            
+                    
+                    Gitbook 常用插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../swoole/">
+            
+                <a href="../swoole/">
+            
+                    
+                    Swoole
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../swoole/安装 Swoole.html">
+            
+                <a href="../swoole/安装 Swoole.html">
+            
+                    
+                    安装 Swoole
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="安装 Go.html">
+            
+                <a href="安装 Go.html">
+            
+                    
+                    安装 Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="beego.html">
+            
+                <a href="beego.html">
+            
+                    
+                    Beego 安装和 Bee 工具的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Beego 安装和 Bee 工具的使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="beego-&#x5B89;&#x88C5;&#x548C;-bee-&#x5DE5;&#x5177;&#x7684;&#x4F7F;&#x7528;">beego &#x5B89;&#x88C5;&#x548C; bee &#x5DE5;&#x5177;&#x7684;&#x4F7F;&#x7528;</h1>
+<h3 id="beego-&#x7B80;&#x4ECB;">beego &#x7B80;&#x4ECB;</h3>
+<p><code>beego</code> &#x662F;&#x4E00;&#x4E2A;&#x5FEB;&#x901F;&#x5F00;&#x53D1; Go &#x5E94;&#x7528;&#x7684; HTTP &#x6846;&#x67B6;&#xFF0C;&#x4ED6;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5FEB;&#x901F;&#x5F00;&#x53D1; API&#x3001;Web &#x53CA;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x7B49;&#x5404;&#x79CD;&#x5E94;&#x7528;&#xFF0C;&#x662F;&#x4E00;&#x4E2A; RESTful &#x7684;&#x6846;&#x67B6;&#xFF0C;&#x4E3B;&#x8981;&#x8BBE;&#x8BA1;&#x7075;&#x611F;&#x6765;&#x6E90;&#x4E8E; tornado&#x3001;sinatra &#x548C; flask &#x8FD9;&#x4E09;&#x4E2A;&#x6846;&#x67B6;&#xFF0C;&#x4F46;&#x662F;&#x7ED3;&#x5408;&#x4E86; Go &#x672C;&#x8EAB;&#x7684;&#x4E00;&#x4E9B;&#x7279;&#x6027;&#xFF08;interface&#x3001;struct &#x5D4C;&#x5165;&#x7B49;&#xFF09;&#x800C;&#x8BBE;&#x8BA1;&#x7684;&#x4E00;&#x4E2A;&#x6846;&#x67B6;&#x3002;</p>
+<h3 id="beego-&#x5B89;&#x88C5;">beego &#x5B89;&#x88C5;</h3>
+<p>Beego &#x7684;&#x5B89;&#x88C5;&#x662F;&#x5178;&#x578B;&#x7684; Go &#x5B89;&#x88C5;&#x5305;&#x7684;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-shell">$ go get github.com/astaxie/beego
+</code></pre>
+<p>&#x5E38;&#x89C1;&#x95EE;&#x9898;&#xFF1A;</p>
+<ul>
+<li><p>git &#x6CA1;&#x6709;&#x5B89;&#x88C5;&#xFF0C;&#x8BF7;&#x81EA;&#x884C;&#x5B89;&#x88C5;&#x4E0D;&#x540C;&#x5E73;&#x53F0;&#x7684; git&#xFF0C;&#x5982;&#x4F55;&#x5B89;&#x88C5;&#x8BF7;&#x81EA;&#x884C;&#x641C;&#x7D22;&#x3002;</p>
+</li>
+<li><p>git https &#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#xFF0C;&#x8BF7;&#x914D;&#x7F6E;&#x672C;&#x5730;&#x7684; git&#xFF0C;&#x5173;&#x95ED; https &#x9A8C;&#x8BC1;&#xFF1A;</p>
+<pre><code class="lang-shell">git config --global http.sslVerify false
+</code></pre>
+</li>
+</ul>
+<blockquote>
+<p>&#x53C2;&#x8003;&#xFF1A;<a href="https://beego.me/docs/install/" target="_blank">Beego &#x5B89;&#x88C5;</a></p>
+</blockquote>
+<hr>
+<h1 id="bee-&#x5DE5;&#x5177;&#x7684;&#x4F7F;&#x7528;">bee &#x5DE5;&#x5177;&#x7684;&#x4F7F;&#x7528;</h1>
+<h3 id="bee-&#x5DE5;&#x5177;&#x7B80;&#x4ECB;">bee &#x5DE5;&#x5177;&#x7B80;&#x4ECB;</h3>
+<p>bee &#x5DE5;&#x5177;&#x662F;&#x4E00;&#x4E2A;&#x4E3A;&#x4E86;&#x534F;&#x52A9;&#x5FEB;&#x901F;&#x5F00;&#x53D1; beego &#x9879;&#x76EE;&#x800C;&#x521B;&#x5EFA;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x901A;&#x8FC7; bee &#x60A8;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x7684;&#x8FDB;&#x884C; beego &#x9879;&#x76EE;&#x7684;&#x521B;&#x5EFA;&#x3001;&#x70ED;&#x7F16;&#x8BD1;&#x3001;&#x5F00;&#x53D1;&#x3001;&#x6D4B;&#x8BD5;&#x3001;&#x548C;&#x90E8;&#x7F72;&#x3002;</p>
+<h3 id="bee-&#x5DE5;&#x5177;&#x7684;&#x5B89;&#x88C5;">bee &#x5DE5;&#x5177;&#x7684;&#x5B89;&#x88C5;</h3>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x7684;&#x65B9;&#x5F0F;&#x5B89;&#x88C5; bee &#x5DE5;&#x5177;&#xFF1A;</p>
+<pre><code class="lang-shell">$ go get github.com/beego/bee
+</code></pre>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x4E4B;&#x540E;&#xFF0C;<code>bee</code> &#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x9ED8;&#x8BA4;&#x5B58;&#x653E;&#x5728; <code>$GOPATH/bin</code> &#x91CC;&#x9762;&#xFF0C;&#x6240;&#x4EE5;&#x60A8;&#x9700;&#x8981;&#x628A; <code>$GOPATH/bin</code> &#x6DFB;&#x52A0;&#x5230;&#x60A8;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4E2D;&#xFF0C;&#x624D;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x6B65;&#x3002;</p>
+<h4 id="&#x62A5;&#x9519;&#xFF1A;">&#x62A5;&#x9519;&#xFF1A;</h4>
+<ol>
+<li><p>golang.org/x/net/html</p>
+<pre><code class="lang-shell">$ bee run
+______
+| ___ \
+| |_/ /  ___   ___
+| ___ \ / _ \ / _ \
+| |_/ /|  __/|  __/
+\____/  \___| \___| v1.10.0
+2019/03/19 13:37:27 INFO     &#x25B6; 0001 Using &apos;dingdian&apos; as &apos;appname&apos;
+2019/03/19 13:37:27 INFO     &#x25B6; 0002 Initializing watcher...
+..\github.com\andybalholm\cascadia\parser.go:11:2: cannot find package &quot;golang.org/x/net/html&quot; in any of:
+        E:\Go\src\golang.org\x\net\html (from $GOROOT)
+        C:\Users\Admin\go\src\golang.org\x\net\html (from $GOPATH)
+2019/03/19 13:37:28 ERROR    &#x25B6; 0003 Failed to build the application: ..\github.com\andybalholm\cascadia\parser.go:11:2: cannot find package &quot;golang.org/x/net/html&quot; in any of:
+        E:\Go\src\golang.org\x\net\html (from $GOROOT)
+        C:\Users\Admin\go\src\golang.org\x\net\html (from $GOPATH)
+</code></pre>
+</li>
+</ol>
+<h5 id="&#x89E3;&#x51B3;&#xFF08;golangorgxnet-&#x5B89;&#x88C5;&#x65B9;&#x6CD5;&#xFF09;&#xFF1A;">&#x89E3;&#x51B3;&#xFF08;<a href="https://blog.csdn.net/xie1xiao1jun/article/details/79421136" target="_blank">golang.org/x/net &#x5B89;&#x88C5;&#x65B9;&#x6CD5;</a>&#xFF09;&#xFF1A;</h5>
+<pre><code class="lang-shell">$ mkdir -p $GOPATH/src/golang.org/x/
+</code></pre>
+<pre><code class="lang-shell">$ cd $GOPATH/src/golang.org/x/
+</code></pre>
+<pre><code class="lang-shell">$ git clone https://github.com/golang/net.git net
+</code></pre>
+<pre><code class="lang-shell">$ go install net
+</code></pre>
+<p>&#x6267;&#x884C; <code>go install</code> &#x4E4B;&#x540E;&#x6CA1;&#x6709;&#x63D0;&#x793A;&#xFF0C;&#x5C31;&#x8BF4;&#x660E;&#x5B89;&#x88C5;&#x597D;&#x4E86;&#x3002;</p>
+<blockquote>
+<p>&#x53C2;&#x8003;&#xFF1A;<a href="https://beego.me/docs/install/bee.md" target="_blank">Bee &#x5DE5;&#x5177;&#x4F7F;&#x7528;</a></p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="安装 Go.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 安装 Go">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Beego 安装和 Bee 工具的使用","level":"1.4.2","depth":2,"previous":{"title":"安装 Go","level":"1.4.1","depth":2,"path":"go/安装 Go.md","ref":"go/安装 Go.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-comscore","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/NoddingFish"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"打盹的鱼","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"技术笔记 · Gitbook","language":"zh-hans","links":{"sidebar":{"个人网站":"http://www.whxuran.cn"}},"gitbook":"3.2.3","description":"记录平时工作和学习中遇到的一些注意点","theme-default":{"showLevel":true}},"file":{"path":"go/beego.md","mtime":"2019-03-19T09:18:18.923Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-19T09:18:45.159Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

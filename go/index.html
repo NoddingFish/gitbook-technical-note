@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Swoole · 技术笔记 · Gitbook</title>
+        <title>Go · 技术笔记 · Gitbook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,10 +65,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="安装 Swoole.html" />
+    <link rel="next" href="安装 Go.html" />
     
     
-    <link rel="prev" href="../gitbook/plugins.html" />
+    <link rel="prev" href="../swoole/安装 Swoole.html" />
     
 
     </head>
@@ -164,9 +164,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="../swoole/">
             
-                <a href="./">
+                <a href="../swoole/">
             
                     
                     Swoole
@@ -178,9 +178,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="安装 Swoole.html">
+        <li class="chapter " data-level="1.3.1" data-path="../swoole/安装 Swoole.html">
             
-                <a href="安装 Swoole.html">
+                <a href="../swoole/安装 Swoole.html">
             
                     
                     安装 Swoole
@@ -196,9 +196,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../go/">
+        <li class="chapter active" data-level="1.4" data-path="./">
             
-                <a href="../go/">
+                <a href="./">
             
                     
                     Go
@@ -210,9 +210,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../go/安装 Go.html">
+        <li class="chapter " data-level="1.4.1" data-path="安装 Go.html">
             
-                <a href="../go/安装 Go.html">
+                <a href="安装 Go.html">
             
                     
                     安装 Go
@@ -223,9 +223,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../go/beego.html">
+        <li class="chapter " data-level="1.4.2" data-path="beego.html">
             
-                <a href="../go/beego.html">
+                <a href="beego.html">
             
                     
                     Beego 安装和 Bee 工具的使用
@@ -271,7 +271,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Swoole</a>
+        <a href=".." >Go</a>
     </h1>
 </div>
 
@@ -286,8 +286,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x4ECB;&#x7ECD;">&#x4ECB;&#x7ECD;</h1>
-<p><a href="https://www.swoole.com/" target="_blank">Swoole</a> &#x662F;&#x9762;&#x5411;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x7684; PHP &#x5F02;&#x6B65;&#x7F51;&#x7EDC;&#x901A;&#x4FE1;&#x5F15;&#x64CE;&#x3002;</p>
+                                <h1 id="go">Go</h1>
+<p><strong>Go</strong> &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x5B83;&#x80FD;&#x8BA9;&#x6784;&#x9020;&#x7B80;&#x5355;&#x3001;&#x53EF;&#x9760;&#x4E14;&#x9AD8;&#x6548;&#x7684;&#x8F6F;&#x4EF6;&#x53D8;&#x5F97;&#x5BB9;&#x6613;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x4E2A; <code>Go</code> &#x7A0B;&#x5E8F; <code>hello.go</code> &#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;fmt&quot;</span>
+
+<span class="hljs-keyword">func</span> main() {
+    fmt.Println(<span class="hljs-string">&quot;Hello, World!&quot;</span>)
+}
+</code></pre>
+<p>&#x6267;&#x884C;&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code class="lang-shell">$ go run hello.go 
+Hello, World!
+</code></pre>
 
                                 
                                 </section>
@@ -315,12 +328,12 @@
 
             
                 
-                <a href="../gitbook/plugins.html" class="navigation navigation-prev " aria-label="Previous page: Gitbook 常用插件">
+                <a href="../swoole/安装 Swoole.html" class="navigation navigation-prev " aria-label="Previous page: 安装 Swoole">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="安装 Swoole.html" class="navigation navigation-next " aria-label="Next page: 安装 Swoole">
+                <a href="安装 Go.html" class="navigation navigation-next " aria-label="Next page: 安装 Go">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -331,7 +344,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Swoole","level":"1.3","depth":1,"next":{"title":"安装 Swoole","level":"1.3.1","depth":2,"path":"swoole/安装 Swoole.md","ref":"swoole/安装 Swoole.md","articles":[]},"previous":{"title":"Gitbook 常用插件","level":"1.2.2","depth":2,"path":"gitbook/plugins.md","ref":"gitbook/plugins.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-comscore","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/NoddingFish"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"打盹的鱼","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"技术笔记 · Gitbook","language":"zh-hans","links":{"sidebar":{"个人网站":"http://www.whxuran.cn"}},"gitbook":"3.2.3","description":"记录平时工作和学习中遇到的一些注意点","theme-default":{"showLevel":true}},"file":{"path":"swoole/README.md","mtime":"2019-03-18T01:09:27.836Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-19T09:18:45.159Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Go","level":"1.4","depth":1,"next":{"title":"安装 Go","level":"1.4.1","depth":2,"path":"go/安装 Go.md","ref":"go/安装 Go.md","articles":[]},"previous":{"title":"安装 Swoole","level":"1.3.1","depth":2,"path":"swoole/安装 Swoole.md","ref":"swoole/安装 Swoole.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-comscore","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/NoddingFish"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"打盹的鱼","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"技术笔记 · Gitbook","language":"zh-hans","links":{"sidebar":{"个人网站":"http://www.whxuran.cn"}},"gitbook":"3.2.3","description":"记录平时工作和学习中遇到的一些注意点","theme-default":{"showLevel":true}},"file":{"path":"go/README.md","mtime":"2019-03-19T05:50:48.051Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-19T09:18:45.159Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
