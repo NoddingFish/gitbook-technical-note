@@ -12,10 +12,34 @@
   "theme-default": {
     "showLevel": true
   },
-  "plugins": ["expandable-chapters-small", "theme-comscore", "github"],
+  "plugins": [
+    "expandable-chapters-small",
+    "theme-comscore",
+    "github",
+    "search-pro",
+    "-search",
+    "-lunr",
+    "back-to-top-button",
+    "flexible-alerts",
+    "include-codeblock",
+    "ace"
+  ],
   "pluginsConfig": {
     "github": {
       "url": "https://github.com/NoddingFish"
+    },
+    "flexible-alerts": {
+      "style": "flat",
+      "comment": {
+        "label": "Comment",
+        "icon": "fa fa-comments",
+        "className": "info"
+      }
+    },
+    "include-codeblock": {
+      "template": "ace",
+      "unindent": false,
+      "theme": "coffee"
     }
   }
 }

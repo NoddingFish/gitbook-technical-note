@@ -19,7 +19,7 @@ $ go get github.com/astaxie/beego
 - git https 无法获取，请配置本地的 git，关闭 https 验证：
 
   ```shell
-  git config --global http.sslVerify false
+  $ git config --global http.sslVerify false
   ```
 
 > 参考：[Beego 安装](https://beego.me/docs/install/)
