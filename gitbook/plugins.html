@@ -21,11 +21,23 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -326,6 +338,60 @@
 </code></pre>
 </li>
 </ol>
+<blockquote>
+<p>[!TIP]</p>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x8BE5; <code>Gitbook</code> &#x6587;&#x6863;&#x6240;&#x4F7F;&#x7528;&#x7684; <code>book.json</code> &#xFF1A;</p>
+</blockquote>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:false,&quot;lang&quot;:&quot;json&quot;,&quot;check&quot;:false,&quot;theme&quot;:&quot;coffee&quot;}">{
+  &quot;title&quot; : &quot;&#x6280;&#x672F;&#x7B14;&#x8BB0; &#xB7; Gitbook&quot;,
+  &quot;author&quot; : &quot;&#x6253;&#x76F9;&#x7684;&#x9C7C;&quot;,
+  &quot;description&quot; : &quot;&#x8BB0;&#x5F55;&#x5E73;&#x65F6;&#x5DE5;&#x4F5C;&#x548C;&#x5B66;&#x4E60;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x6CE8;&#x610F;&#x70B9;&quot;,
+  &quot;language&quot; : &quot;zh-hans&quot;,
+  &quot;gitbook&quot; : &quot;3.2.3&quot;,
+  &quot;links&quot; : {
+    &quot;sidebar&quot; : {
+      &quot;&#x4E2A;&#x4EBA;&#x7F51;&#x7AD9;&quot; : &quot;http://www.whxuran.cn&quot;
+    }
+  },
+  &quot;theme-default&quot;: {
+    &quot;showLevel&quot;: true
+  },
+  &quot;plugins&quot;: [
+    &quot;expandable-chapters-small&quot;,
+    &quot;theme-comscore&quot;,
+    &quot;github&quot;,
+    &quot;search-pro&quot;,
+    &quot;-search&quot;,
+    &quot;-lunr&quot;,
+    &quot;back-to-top-button&quot;,
+    &quot;flexible-alerts&quot;,
+    &quot;include-codeblock&quot;,
+    &quot;ace&quot;
+  ],
+  &quot;pluginsConfig&quot;: {
+    &quot;github&quot;: {
+      &quot;url&quot;: &quot;https://github.com/NoddingFish&quot;
+    },
+    &quot;flexible-alerts&quot;: {
+      &quot;style&quot;: &quot;flat&quot;,
+      &quot;comment&quot;: {
+        &quot;label&quot;: &quot;Comment&quot;,
+        &quot;icon&quot;: &quot;fa fa-comments&quot;,
+        &quot;className&quot;: &quot;info&quot;
+      }
+    },
+    &quot;include-codeblock&quot;: {
+      &quot;template&quot;: &quot;ace&quot;,
+      &quot;unindent&quot;: false,
+      &quot;theme&quot;: &quot;coffee&quot;
+    }
+  }
+}<br></div></div>
+
+
+
+
+
 
                                 
                                 </section>
@@ -369,7 +435,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Gitbook 常用插件","level":"1.2.2","depth":2,"next":{"title":"Swoole","level":"1.3","depth":1,"path":"swoole/README.md","ref":"swoole/README.md","articles":[{"title":"安装 Swoole","level":"1.3.1","depth":2,"path":"swoole/安装 Swoole.md","ref":"swoole/安装 Swoole.md","articles":[]}]},"previous":{"title":"Gitbook 一键部署至 GitHub Pages","level":"1.2.1","depth":2,"path":"gitbook/Gitbook 一键部署至 GitHub Pages.md","ref":"gitbook/Gitbook 一键部署至 GitHub Pages.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-comscore","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/NoddingFish"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"打盹的鱼","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"技术笔记 · Gitbook","language":"zh-hans","links":{"sidebar":{"个人网站":"http://www.whxuran.cn"}},"gitbook":"3.2.3","description":"记录平时工作和学习中遇到的一些注意点","theme-default":{"showLevel":true}},"file":{"path":"gitbook/plugins.md","mtime":"2019-03-18T01:09:27.833Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-19T09:18:45.159Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Gitbook 常用插件","level":"1.2.2","depth":2,"next":{"title":"Swoole","level":"1.3","depth":1,"path":"swoole/README.md","ref":"swoole/README.md","articles":[{"title":"安装 Swoole","level":"1.3.1","depth":2,"path":"swoole/安装 Swoole.md","ref":"swoole/安装 Swoole.md","articles":[]}]},"previous":{"title":"Gitbook 一键部署至 GitHub Pages","level":"1.2.1","depth":2,"path":"gitbook/Gitbook 一键部署至 GitHub Pages.md","ref":"gitbook/Gitbook 一键部署至 GitHub Pages.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-comscore","github","search-pro","-search","-lunr","back-to-top-button","flexible-alerts","include-codeblock","ace"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"github":{"url":"https://github.com/NoddingFish"},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"back-to-top-button":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"coffee","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"打盹的鱼","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"技术笔记 · Gitbook","language":"zh-hans","links":{"sidebar":{"个人网站":"http://www.whxuran.cn"}},"gitbook":"3.2.3","description":"记录平时工作和学习中遇到的一些注意点","theme-default":{"showLevel":true}},"file":{"path":"gitbook/plugins.md","mtime":"2019-03-19T15:29:46.284Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-19T15:32:01.194Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -387,19 +453,27 @@
         
     
         
-        <script src="gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook-plugin-search/search.js"></script>
+        <script src="gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         
-        <script src="gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-ace/ace.js"></script>
         
     
         
