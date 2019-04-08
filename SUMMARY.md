@@ -7,6 +7,8 @@
 * [PHP](php/README.md)
     * [Swoole](php/swoole/README.md)
         * [安装 Swoole](php/swoole/安装 Swoole.md)
+    * [MySQL](php/mysql/README.md)
+        * [MySQL 常见问题](php/mysql/mysql 常见问题.md)
 * [Go](go/README.md)
     * [安装 Go](go/安装 Go.md)
     * [Beego 安装和 Bee 工具的使用](go/beego.md)
