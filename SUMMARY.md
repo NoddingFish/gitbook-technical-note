@@ -6,6 +6,7 @@
     * [Gitbook 常用插件](gitbook/plugins.md)
 * [PHP](php/README.md)
     * [DNMP](php/dnmp/README.md)
+        * [DNMP 使用过程中注意点](php/dnmp/DNMP 使用过程中注意点.md)
     * [MySQL](php/mysql/README.md)
         * [MySQL 常见问题](php/mysql/mysql 常见问题.md)
     * [Swoole](php/swoole/README.md)

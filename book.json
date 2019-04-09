@@ -22,7 +22,9 @@
     "back-to-top-button",
     "flexible-alerts",
     "include-codeblock",
-    "ace"
+    "ace",
+    "tbfed-pagefooter",
+    "atoc"
   ],
   "pluginsConfig": {
     "github": {
@@ -40,6 +42,15 @@
       "template": "ace",
       "unindent": false,
       "theme": "coffee"
+    },
+    "tbfed-pagefooter": {
+      "copyright":"Copyright &copy whxuran.cn 2019",
+      "modify_label": "该文件修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "atoc": {
+      "addClass": true,
+      "className": "atoc"
     }
   }
 }
