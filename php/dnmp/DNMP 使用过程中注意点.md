@@ -68,5 +68,7 @@ $ docker-compose up -d
 $ winpty docker exec -it dnmp_php72_1 bash # windows 中使用 winpty
 ```
 
-
+```shell
+$ composer config -gl # 可以查看 composer 配置
+```
 
