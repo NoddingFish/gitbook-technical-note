@@ -9,6 +9,8 @@
         * [DNMP 使用过程中注意点](php/dnmp/DNMP 使用过程中注意点.md)
     * [MySQL](php/mysql/README.md)
         * [MySQL 常见问题](php/mysql/mysql 常见问题.md)
+    * [Nginx](php/nginx/README.md)
+        * [Nginx 常见问题](php/nginx/nginx 常见问题.md)
     * [Swoole](php/swoole/README.md)
         * [安装 Swoole](php/swoole/安装 Swoole.md)
 * [HTML](html/README.md)
