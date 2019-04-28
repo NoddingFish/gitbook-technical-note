@@ -13,6 +13,8 @@
         * [Nginx 常见问题](php/nginx/nginx 常见问题.md)
     * [Swoole](php/swoole/README.md)
         * [安装 Swoole](php/swoole/安装 Swoole.md)
+    * [PhpStorm](php/phpstorm/README.md)
+        * [PhpStorm使用](php/phpstorm/phpstorm使用.md)
 * [HTML](html/README.md)
     * [Layui](html/layui/README.md)
 * [Go](go/README.md)
