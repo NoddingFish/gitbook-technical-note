@@ -1,5 +1,3 @@
-<!-- toc -->
-
 # DNMP 使用
 
 ## `MySQL` 和 `Redis` 连接问题
@@ -71,4 +69,25 @@ $ winpty docker exec -it dnmp_php72_1 bash # windows 中使用 winpty
 ```shell
 $ composer config -gl # 可以查看 composer 配置
 ```
+
+
+
+# 使用 `Xdebug` 
+
+配置 `php.ini` ：
+
+```ini
+[XDebug]
+; Debug Config
+xdebug.remote_enable = 1
+xdebug.remote_handler = "dbgp"
+;xdebug.remote_connect_back = 1
+xdebug.remote_port = 9000
+xdebug.idekey = PHPSTORM
+# host.docker.internal 是 windows 下 docker 获取host
+xdebug.remote_host = host.docker.internal
+;xdebug.remote_log = "/var/log/dnmp/php.xdebug.log"
+```
+
+
 

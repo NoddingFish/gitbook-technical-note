@@ -17,7 +17,7 @@
         * [PhpStorm使用](php/phpstorm/phpstorm使用.md)
 * [HTML](html/README.md)
     * [Layui](html/layui/README.md)
-    * [Layui 使用过程中注意点](html/layui/layui使用过程中注意点.md)
+      * [Layui 使用过程中注意点](html/layui/layui使用过程中注意点.md)
 * [Go](go/README.md)
     * [安装 Go](go/安装 Go.md)
     * [Beego 安装和 Bee 工具的使用](go/beego.md)
