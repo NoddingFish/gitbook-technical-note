@@ -1,6 +1,6 @@
 # Layui 使用过程中注意点
 
-##### 1、如果 layui 数据表格列宽自适应出现横向滚动条的解决方案：
+##### 1、如果 `layui` 数据表格列宽自适应出现横向滚动条的解决方案：
 
 正常情况下，自适应的列宽不会导致 table 容器出现滚动条。如果你的出现了，请按照下述方案解决：
 
@@ -28,7 +28,7 @@
 
 
 
-##### 2、Layui 第三方组件：formSelects 4.x
+##### 2、`Layui` 第三方组件： `formSelects 4.x`
 
 引入后需要渲染：
 
@@ -37,3 +37,45 @@ formSelects.render();
 ```
 
 > [formSelects-v4.js 基于Layui的多选解决方案](https://hnzzmsf.github.io/example/example_v4.html)
+
+
+
+##### 3、`Layui` 中弹出层的 `btn` 提交 `form` 表单；
+
+###### 思路：
+
+<u>在 `form` 表单中设置隐藏的 `button` ，用弹出层中的提交按钮 `click` 隐藏的 `button`。</u>
+
+###### 在弹出层的 `form` 表单中加入一下 `html` ，隐藏：
+
+```html
+<button class="layui-btn layui-btn-normal layui-col-md-offset10 menuSubmit" style="display: none;" lay-filter="menuSubmit" lay-submit>提交</button>
+```
+
+###### `js` 中可以这么写：
+
+```js
+admin.popup({
+    id: 'layor-popup-order-single'
+    , title: '编辑菜单'
+    , anim: -1
+    , area: ['50%', '60%']
+    , shade: [0.5, '#000000']
+    , skin: 'layui-anim layui-anim-upbit layor-body'
+    , btn: ['提交']
+    , success: function () {
+        view(this.id).render('auth/menu/editView', node).then(function () {
+
+        }).done(function () {
+            //页面加载后的回调 do something
+            form.render();//渲染页面
+        })
+    },
+    yes: function (index, layero) {
+        layero.find('.menuSubmit').click();//点击隐藏的按钮
+    }
+});
+```
+
+> 参考：[layer弹出层里的里form如何监听事件在弹出层的按钮上?](https://fly.layui.com/jie/5581)
+
