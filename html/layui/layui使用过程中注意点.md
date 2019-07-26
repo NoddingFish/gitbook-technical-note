@@ -79,3 +79,36 @@ admin.popup({
 
 > 参考：[layer弹出层里的里form如何监听事件在弹出层的按钮上?](https://fly.layui.com/jie/5581)
 
+
+
+##### 4、表格中使用下拉选择框
+
+增加的 `css` 样式：
+
+```css
+<style>
+    /* 防止下拉框的下拉列表被隐藏---必须设置--- 此样式和表格的样式有冲突 如果表格列数太多 会出现错乱的情况 目前我的解决方法是忽略下拉框的美化渲染 <select lay-ignore> */
+    .layui-table-cell {
+        overflow: visible;
+    }
+
+    .layui-table-box {
+        overflow: visible;
+    }
+
+    .layui-table-body {
+        overflow: visible;
+    }
+    /* 设置下拉框的高度与表格单元相同 */
+    td .layui-form-select{
+        margin-top: -10px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+</style>
+```
+
+效果如图所示：
+
+![1562135097510](../../images/1562135097510.png)
+
