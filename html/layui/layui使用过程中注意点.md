@@ -112,3 +112,25 @@ admin.popup({
 
 ![1562135097510](../../images/1562135097510.png)
 
+
+
+##### 5、`Layui` 阻止冒泡
+
+`html` 增加点击事件阻止冒泡，复选框需要注意：
+
+```html
+<!-- 复选框阻止冒泡增加一个 li -->
+<li class="stopBubble layui-input-inline">
+	<input type="checkbox" name="" lay-filter="TEST" lay-skin="primary">
+</li>
+<!-- 其他的冒泡增加一个点击事件阻止 -->
+<input type="number" class="layui-input goodsNum stopBubble">
+```
+
+```js
+//TODO 阻止冒泡（checkbox & input）
+$(".stopBubble").off('click').on('click', function (that) {
+    layui.stope(that);//阻止冒泡
+});
+```
+
