@@ -4,6 +4,7 @@
 * [Gitbook](gitbook/README.md)
     * [Gitbook 一键部署至 GitHub Pages](gitbook/Gitbook 一键部署至 GitHub Pages.md)
     * [Gitbook 常用插件](gitbook/plugins.md)
+* [Docker](docker/README.md)
 * [PHP](php/README.md)
     * [DNMP](php/dnmp/README.md)
         * [DNMP 使用过程中注意点](php/dnmp/DNMP 使用过程中注意点.md)
@@ -27,4 +28,12 @@
 * [Go](go/README.md)
     * [安装 Go](go/安装 Go.md)
     * [Beego 安装和 Bee 工具的使用](go/beego.md)
+* [Tools](tools/)
+    * [Supervisor](tools/Supervisor/README.md)
+        
+        * [配置Supervisor](tools/Supervisor/配置Supervisor.md)
+        
+        [Elasticsearch](tools/Elasticsearch/README.md)
+        
+        * [Elasticsearch遇到的问题](tools/Elasticsearch/Elasticsearch遇到的问题.md)
 
