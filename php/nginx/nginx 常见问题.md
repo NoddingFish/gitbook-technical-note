@@ -20,4 +20,3 @@ http {
     keepalive_timeout  65;
 }
 ```
-

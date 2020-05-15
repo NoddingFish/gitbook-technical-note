@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Beego 安装和 Bee 工具的使用 · 技术笔记 · Gitbook</title>
+        <title>Tools · 技术笔记 · Gitbook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -85,10 +85,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../tools/" />
+    <link rel="next" href="Supervisor/" />
     
     
-    <link rel="prev" href="安装 Go.html" />
+    <link rel="prev" href="../go/beego.html" />
     
 
     </head>
@@ -536,9 +536,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="./">
+        <li class="chapter " data-level="1.6" data-path="../go/">
             
-                <a href="./">
+                <a href="../go/">
             
                     
                     Go
@@ -550,9 +550,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="安装 Go.html">
+        <li class="chapter " data-level="1.6.1" data-path="../go/安装 Go.html">
             
-                <a href="安装 Go.html">
+                <a href="../go/安装 Go.html">
             
                     
                     安装 Go
@@ -563,9 +563,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.2" data-path="beego.html">
+        <li class="chapter " data-level="1.6.2" data-path="../go/beego.html">
             
-                <a href="beego.html">
+                <a href="../go/beego.html">
             
                     
                     Beego 安装和 Bee 工具的使用
@@ -581,9 +581,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="../tools/">
+        <li class="chapter active" data-level="1.7" data-path="./">
             
-                <a href="../tools/">
+                <a href="./">
             
                     
                     Tools
@@ -595,9 +595,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="../tools/Supervisor/">
+        <li class="chapter " data-level="1.7.1" data-path="Supervisor/">
             
-                <a href="../tools/Supervisor/">
+                <a href="Supervisor/">
             
                     
                     Supervisor
@@ -609,9 +609,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1.1" data-path="../tools/Supervisor/配置Supervisor.html">
+        <li class="chapter " data-level="1.7.1.1" data-path="Supervisor/配置Supervisor.html">
             
-                <a href="../tools/Supervisor/配置Supervisor.html">
+                <a href="Supervisor/配置Supervisor.html">
             
                     
                     配置Supervisor
@@ -622,9 +622,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.1.2" data-path="../tools/Elasticsearch/Elasticsearch遇到的问题.html">
+        <li class="chapter " data-level="1.7.1.2" data-path="Elasticsearch/Elasticsearch遇到的问题.html">
             
-                <a href="../tools/Elasticsearch/Elasticsearch遇到的问题.html">
+                <a href="Elasticsearch/Elasticsearch遇到的问题.html">
             
                     
                     Elasticsearch遇到的问题
@@ -675,7 +675,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Beego 安装和 Bee 工具的使用</a>
+        <a href=".." >Tools</a>
     </h1>
 </div>
 
@@ -690,70 +690,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="beego-&#x5B89;&#x88C5;&#x548C;-bee-&#x5DE5;&#x5177;&#x7684;&#x4F7F;&#x7528;">beego &#x5B89;&#x88C5;&#x548C; bee &#x5DE5;&#x5177;&#x7684;&#x4F7F;&#x7528;</h1>
-<h3 id="beego-&#x7B80;&#x4ECB;">beego &#x7B80;&#x4ECB;</h3>
-<p><code>beego</code> &#x662F;&#x4E00;&#x4E2A;&#x5FEB;&#x901F;&#x5F00;&#x53D1; Go &#x5E94;&#x7528;&#x7684; HTTP &#x6846;&#x67B6;&#xFF0C;&#x4ED6;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5FEB;&#x901F;&#x5F00;&#x53D1; API&#x3001;Web &#x53CA;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x7B49;&#x5404;&#x79CD;&#x5E94;&#x7528;&#xFF0C;&#x662F;&#x4E00;&#x4E2A; RESTful &#x7684;&#x6846;&#x67B6;&#xFF0C;&#x4E3B;&#x8981;&#x8BBE;&#x8BA1;&#x7075;&#x611F;&#x6765;&#x6E90;&#x4E8E; tornado&#x3001;sinatra &#x548C; flask &#x8FD9;&#x4E09;&#x4E2A;&#x6846;&#x67B6;&#xFF0C;&#x4F46;&#x662F;&#x7ED3;&#x5408;&#x4E86; Go &#x672C;&#x8EAB;&#x7684;&#x4E00;&#x4E9B;&#x7279;&#x6027;&#xFF08;interface&#x3001;struct &#x5D4C;&#x5165;&#x7B49;&#xFF09;&#x800C;&#x8BBE;&#x8BA1;&#x7684;&#x4E00;&#x4E2A;&#x6846;&#x67B6;&#x3002;</p>
-<h3 id="beego-&#x5B89;&#x88C5;">beego &#x5B89;&#x88C5;</h3>
-<p>Beego &#x7684;&#x5B89;&#x88C5;&#x662F;&#x5178;&#x578B;&#x7684; Go &#x5B89;&#x88C5;&#x5305;&#x7684;&#x5F62;&#x5F0F;&#xFF1A;</p>
-<pre><code class="lang-shell">$ go get github.com/astaxie/beego
-</code></pre>
-<p>&#x5E38;&#x89C1;&#x95EE;&#x9898;&#xFF1A;</p>
-<ul>
-<li><p>git &#x6CA1;&#x6709;&#x5B89;&#x88C5;&#xFF0C;&#x8BF7;&#x81EA;&#x884C;&#x5B89;&#x88C5;&#x4E0D;&#x540C;&#x5E73;&#x53F0;&#x7684; git&#xFF0C;&#x5982;&#x4F55;&#x5B89;&#x88C5;&#x8BF7;&#x81EA;&#x884C;&#x641C;&#x7D22;&#x3002;</p>
-</li>
-<li><p>git https &#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#xFF0C;&#x8BF7;&#x914D;&#x7F6E;&#x672C;&#x5730;&#x7684; git&#xFF0C;&#x5173;&#x95ED; https &#x9A8C;&#x8BC1;&#xFF1A;</p>
-<pre><code class="lang-shell">$ git config --global http.sslVerify false
-</code></pre>
-</li>
-</ul>
-<blockquote>
-<p>&#x53C2;&#x8003;&#xFF1A;<a href="https://beego.me/docs/install/" target="_blank">Beego &#x5B89;&#x88C5;</a></p>
-</blockquote>
-<hr>
-<h1 id="bee-&#x5DE5;&#x5177;&#x7684;&#x4F7F;&#x7528;">bee &#x5DE5;&#x5177;&#x7684;&#x4F7F;&#x7528;</h1>
-<h3 id="bee-&#x5DE5;&#x5177;&#x7B80;&#x4ECB;">bee &#x5DE5;&#x5177;&#x7B80;&#x4ECB;</h3>
-<p>bee &#x5DE5;&#x5177;&#x662F;&#x4E00;&#x4E2A;&#x4E3A;&#x4E86;&#x534F;&#x52A9;&#x5FEB;&#x901F;&#x5F00;&#x53D1; beego &#x9879;&#x76EE;&#x800C;&#x521B;&#x5EFA;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x901A;&#x8FC7; bee &#x60A8;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x7684;&#x8FDB;&#x884C; beego &#x9879;&#x76EE;&#x7684;&#x521B;&#x5EFA;&#x3001;&#x70ED;&#x7F16;&#x8BD1;&#x3001;&#x5F00;&#x53D1;&#x3001;&#x6D4B;&#x8BD5;&#x3001;&#x548C;&#x90E8;&#x7F72;&#x3002;</p>
-<h3 id="bee-&#x5DE5;&#x5177;&#x7684;&#x5B89;&#x88C5;">bee &#x5DE5;&#x5177;&#x7684;&#x5B89;&#x88C5;</h3>
-<p>&#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x7684;&#x65B9;&#x5F0F;&#x5B89;&#x88C5; bee &#x5DE5;&#x5177;&#xFF1A;</p>
-<pre><code class="lang-shell">$ go get github.com/beego/bee
-</code></pre>
-<p>&#x5B89;&#x88C5;&#x5B8C;&#x4E4B;&#x540E;&#xFF0C;<code>bee</code> &#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x9ED8;&#x8BA4;&#x5B58;&#x653E;&#x5728; <code>$GOPATH/bin</code> &#x91CC;&#x9762;&#xFF0C;&#x6240;&#x4EE5;&#x60A8;&#x9700;&#x8981;&#x628A; <code>$GOPATH/bin</code> &#x6DFB;&#x52A0;&#x5230;&#x60A8;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4E2D;&#xFF0C;&#x624D;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x6B65;&#x3002;</p>
-<h4 id="&#x62A5;&#x9519;&#xFF1A;">&#x62A5;&#x9519;&#xFF1A;</h4>
-<ol>
-<li><p>golang.org/x/net/html</p>
-<pre><code class="lang-shell">$ bee run
-______
-| ___ \
-| |_/ /  ___   ___
-| ___ \ / _ \ / _ \
-| |_/ /|  __/|  __/
-\____/  \___| \___| v1.10.0
-2019/03/19 13:37:27 INFO     &#x25B6; 0001 Using &apos;dingdian&apos; as &apos;appname&apos;
-2019/03/19 13:37:27 INFO     &#x25B6; 0002 Initializing watcher...
-..\github.com\andybalholm\cascadia\parser.go:11:2: cannot find package &quot;golang.org/x/net/html&quot; in any of:
-        E:\Go\src\golang.org\x\net\html (from $GOROOT)
-        C:\Users\Admin\go\src\golang.org\x\net\html (from $GOPATH)
-2019/03/19 13:37:28 ERROR    &#x25B6; 0003 Failed to build the application: ..\github.com\andybalholm\cascadia\parser.go:11:2: cannot find package &quot;golang.org/x/net/html&quot; in any of:
-        E:\Go\src\golang.org\x\net\html (from $GOROOT)
-        C:\Users\Admin\go\src\golang.org\x\net\html (from $GOPATH)
-</code></pre>
-</li>
-</ol>
-<h5 id="&#x89E3;&#x51B3;&#xFF08;golangorgxnet-&#x5B89;&#x88C5;&#x65B9;&#x6CD5;&#xFF09;&#xFF1A;">&#x89E3;&#x51B3;&#xFF08;<a href="https://blog.csdn.net/xie1xiao1jun/article/details/79421136" target="_blank">golang.org/x/net &#x5B89;&#x88C5;&#x65B9;&#x6CD5;</a>&#xFF09;&#xFF1A;</h5>
-<pre><code class="lang-shell">$ mkdir -p $GOPATH/src/golang.org/x/
-</code></pre>
-<pre><code class="lang-shell">$ cd $GOPATH/src/golang.org/x/
-</code></pre>
-<pre><code class="lang-shell">$ git clone https://github.com/golang/net.git net
-</code></pre>
-<pre><code class="lang-shell">$ go install net
-</code></pre>
-<p>&#x6267;&#x884C; <code>go install</code> &#x4E4B;&#x540E;&#x6CA1;&#x6709;&#x63D0;&#x793A;&#xFF0C;&#x5C31;&#x8BF4;&#x660E;&#x5B89;&#x88C5;&#x597D;&#x4E86;&#x3002;</p>
-<blockquote>
-<p>&#x53C2;&#x8003;&#xFF1A;<a href="https://beego.me/docs/install/bee.md" target="_blank">Bee &#x5DE5;&#x5177;&#x4F7F;&#x7528;</a> </p>
-</blockquote>
+                                <h1 id="tools">Tools</h1>
+<h5 id="&#x7528;&#x5230;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x4F7F;&#x7528;&#x64CD;&#x4F5C;&#x8BB0;&#x5F55;">&#x7528;&#x5230;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x4F7F;&#x7528;&#x64CD;&#x4F5C;&#x8BB0;&#x5F55;</h5>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; whxuran.cn 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-03-21 14:18:25
+2020-05-15 21:07:55
 </span></footer>
 
 
@@ -784,12 +724,12 @@ ______
 
             
                 
-                <a href="安装 Go.html" class="navigation navigation-prev " aria-label="Previous page: 安装 Go">
+                <a href="../go/beego.html" class="navigation navigation-prev " aria-label="Previous page: Beego 安装和 Bee 工具的使用">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../tools/" class="navigation navigation-next " aria-label="Next page: Tools">
+                <a href="Supervisor/" class="navigation navigation-next " aria-label="Next page: Supervisor">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -800,7 +740,7 @@ ______
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Beego 安装和 Bee 工具的使用","level":"1.6.2","depth":2,"next":{"title":"Tools","level":"1.7","depth":1,"path":"tools/README.md","ref":"tools/README.md","articles":[{"title":"Supervisor","level":"1.7.1","depth":2,"path":"tools/Supervisor/README.md","ref":"tools/Supervisor/README.md","articles":[{"title":"配置Supervisor","level":"1.7.1.1","depth":3,"path":"tools/Supervisor/配置Supervisor.md","ref":"tools/Supervisor/配置Supervisor.md","articles":[]},{"title":"Elasticsearch遇到的问题","level":"1.7.1.2","depth":3,"path":"tools/Elasticsearch/Elasticsearch遇到的问题.md","ref":"tools/Elasticsearch/Elasticsearch遇到的问题.md","articles":[]}]}]},"previous":{"title":"安装 Go","level":"1.6.1","depth":2,"path":"go/安装 Go.md","ref":"go/安装 Go.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-comscore","github","search-pro","-search","-lunr","back-to-top-button","flexible-alerts","include-codeblock","ace","tbfed-pagefooter","atoc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy whxuran.cn 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"ace":{},"github":{"url":"https://github.com/NoddingFish"},"atoc":{"addClass":true,"className":"atoc"},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"back-to-top-button":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"coffee","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"打盹的鱼","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"技术笔记 · Gitbook","language":"zh-hans","links":{"sidebar":{"个人网站":"http://www.whxuran.cn"}},"gitbook":"3.2.3","description":"记录平时工作和学习中遇到的一些注意点","theme-default":{"showLevel":true}},"file":{"path":"go/beego.md","mtime":"2019-03-21T06:18:25.914Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-15T13:18:56.121Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Tools","level":"1.7","depth":1,"next":{"title":"Supervisor","level":"1.7.1","depth":2,"path":"tools/Supervisor/README.md","ref":"tools/Supervisor/README.md","articles":[{"title":"配置Supervisor","level":"1.7.1.1","depth":3,"path":"tools/Supervisor/配置Supervisor.md","ref":"tools/Supervisor/配置Supervisor.md","articles":[]},{"title":"Elasticsearch遇到的问题","level":"1.7.1.2","depth":3,"path":"tools/Elasticsearch/Elasticsearch遇到的问题.md","ref":"tools/Elasticsearch/Elasticsearch遇到的问题.md","articles":[]}]},"previous":{"title":"Beego 安装和 Bee 工具的使用","level":"1.6.2","depth":2,"path":"go/beego.md","ref":"go/beego.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-comscore","github","search-pro","-search","-lunr","back-to-top-button","flexible-alerts","include-codeblock","ace","tbfed-pagefooter","atoc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy whxuran.cn 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"ace":{},"github":{"url":"https://github.com/NoddingFish"},"atoc":{"addClass":true,"className":"atoc"},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"back-to-top-button":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"coffee","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"打盹的鱼","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"技术笔记 · Gitbook","language":"zh-hans","links":{"sidebar":{"个人网站":"http://www.whxuran.cn"}},"gitbook":"3.2.3","description":"记录平时工作和学习中遇到的一些注意点","theme-default":{"showLevel":true}},"file":{"path":"tools/README.md","mtime":"2020-05-15T13:07:55.231Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-15T13:18:56.121Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
