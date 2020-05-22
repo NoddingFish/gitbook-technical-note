@@ -53,3 +53,19 @@ curl -XGET 192.168.16.186:30001/index/_settings # index 是查询指定索引，
 }
 ```
 
+
+
+##### 2、Data too large
+
+解决方法：
+
+```shell
+curl  -H "Content-Type:application/json" -XPOST 'http://192.168.16.186:30001/_cache/clear' -d '{ "fielddata": "true" }'
+```
+
+返回结果：
+
+```json
+{"_shards":{"total":274,"successful":137,"failed":0}}
+```
+
