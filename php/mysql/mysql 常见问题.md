@@ -29,3 +29,16 @@
    ```
 
    
+
+##### 2、Mysql 数据表中删除重复的数据，并保留其中一条数据
+
+执行 `sql` ：
+
+```mysql
+DELETE FROM `qimen_deliveryorder` WHERE `id` IN (
+	SELECT a.`id`,`trade_id`  FROM (
+    	SELECT id,trade_id,COUNT(*) as c   FROM `qimen_deliveryorder` GROUP BY `trade_id` HAVING COUNT(*) >= 2 ORDER BY c DESC
+    ) as a 
+)
+```
+
