@@ -134,3 +134,24 @@ $(".stopBubble").off('click').on('click', function (that) {
 });
 ```
 
+##### 6、 `Layui` 中 `checkbox` ，`form.render()` 问题
+
+> 参考：https://www.jianshu.com/p/370d2a18fd91
+
+下面的方法，无法更新渲染
+
+```js
+$(this).attr('checked',true);
+form.render('checkbox');
+```
+
+需要改为：
+
+```js
+$(this).prop('checked',true);
+form.render('checkbox');
+```
+
+根据官方的建议：
+
+​	具有 `true` 和 `false` 两个属性的属性，如 `checked`, `selected` 或者 `disabled` 使用 `prop()` ，其他的使用 `attr()`
