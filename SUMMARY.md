@@ -33,6 +33,8 @@
         * [Go语言核心36讲](go/Learn/Go语言核心36讲/README.md)
             * [模块一：Go语言基础知识](go/Learn/Go语言核心36讲/README.md)
                 * [01 | 工作区和 GOPATH](go/Learn/Go语言核心36讲/01工作区和GOPATH.md)
+    * [gocolly](go/gocolly/README.md)
+        * [1、gocolly 的安装及使用](go/gocolly/1、gocolly 的安装及使用.md)
 * [Tools](tools/README.md)
     * [Supervisor](tools/Supervisor/README.md)
         * [配置Supervisor](tools/Supervisor/配置Supervisor.md)
