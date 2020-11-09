@@ -25,6 +25,7 @@
 - 利用 `Elasticsearch` 完成搜索大数据的处理
 - 利用 `Laravel` 搭建一个管理后台，具体功能待定
 - 利用 `vue` 搭建前端功能，展示数据、聊天室等功能
+- 新增： `kafka` 、 `Apache nifi` 
 
 
 
