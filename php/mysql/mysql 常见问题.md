@@ -42,3 +42,9 @@ DELETE FROM `qimen_deliveryorder` WHERE `id` IN (
 )
 ```
 
+##### 3、 `Mysql binlog` 日志
+
+```shell
+/www/server/mysql/bin/mysqlbinlog --start-datetime="2021-01-14 01:00:00" --stop-datetime="2021-01-14 14:00:00" /www/server/data/mysql-bin.000084 -r afind1.sql
+```
+

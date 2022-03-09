@@ -2,6 +2,26 @@
 
 > 参考：[Supervisor使用详解](https://www.jianshu.com/p/0b9054b33db3)
 
+#### 安装：
+
+```shell
+yum install supervisor
+```
+
+#### 设置开机启动：
+
+```shell
+systemctl enable supervisord.service
+```
+
+#### 重启：
+
+```shell
+supervisorctl reload
+```
+
+
+
 #### 说明：
 
 ​	配置文件：`/etc/supervisord.conf`
